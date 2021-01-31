@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar</title>
+</head>
+<body>
+    <h1>Atualizar</h1>
+    <br>
+    <form action="" method="POST">
+        <table>
+        <tr>
+            <td>Nome</td>
+            <td><input type="text" name="nome" value="{{ pessoa.nome }}"></td>
+        </tr>
+        <tr>
+            <td>Razão social</td>
+            <td><input type="text" name="razao_social" value="{{ pessoa.razao_social}}"></td>
+        </tr>
+        <tr>
+            <td>CNPJ</td>
+            <td><input type="text" name="cnpj" value="{{ pessoa.cnpj}}"></td>
+        </tr>
+        <tr>
+            <td>Data de inclusão</td>
+            <td><input type="text" name="data_inclusao" value="{{ pessoa.data_inclusao}}"></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Atualizar dados">
+    </form>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
